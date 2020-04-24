@@ -2357,7 +2357,7 @@
     max-width: 295px;
     width: 100%;
     max-height: none;
-    margin: 0 auto 15px;
+    margin: 0 auto;
   }
   .updates__img-block {
     margin: 0 auto 20px;
@@ -2483,10 +2483,6 @@
   }
   .menu-adaptive__link {
     font-size: 14px;
-  }
-  .side-tip__img-block {
-    max-width: 320px;
-    margin: 0 auto;
   }
 }
 

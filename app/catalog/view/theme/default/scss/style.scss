@@ -571,6 +571,7 @@ $lightgreen: #9bc34e;
         height: 110px;
         flex-shrink: 0;
         display: block;
+        
     }
     &__img{
         width: 100%;
@@ -1811,7 +1812,7 @@ $lightgreen: #9bc34e;
                     max-width: 295px;
                     width: 100%;
                     max-height: none;                   
-                    margin: 0 auto 15px;
+                    margin: 0 auto;
                 }
             }
         }
@@ -1967,13 +1968,7 @@ $lightgreen: #9bc34e;
             font-size: 14px;
         }
     }
-    .side-tip{
-        &__img-block{
-            
-            max-width: 320px;
-            margin: 0 auto;
-        }
-    }
+    
     
 }
 @media screen and (max-width:450px){

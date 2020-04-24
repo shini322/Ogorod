@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalog</title>
     <link rel="stylesheet" href="./catalog/view/theme/default/css/global.css">
-  <link rel="stylesheet" href="./catalog/view/theme/default/css/style.css">
+    <link rel="stylesheet" href="./catalog/view/theme/default/css/style.css">
+    <link rel="stylesheet" href="./catalog/view/theme/default/css/jquery.fancybox.min.css">
 </head>
 <body>
     <div class="wrapper-catalog">
@@ -90,12 +91,12 @@
                       <input class="search__input" type="text" placeholder="Введите запрос для поиска">
                       <img  class="search__img" src="./images/search-icon.png" alt="">
                   </div>
-                  <div class="widgets">
-                      <a class="widgets__link" href="#"><img class="widgets__img" src="./images/vk-icon.png" alt=""></a>
-                      <a class="widgets__link" href="#"><img class="widgets__img" src="./images/odnoclass-icon.png" alt=""></a>            
-                      <a class="widgets__link" href="#"><img class="widgets__img" src="./images/inst-icon.png" alt=""></a>
-                      <a class="widgets__link" href="#"><img class="widgets__img" src="./images/youtube-icon.png" alt=""></a>
-                      <a class="widgets__link" href="#"><img class="widgets__img" src="./images/yandex-icon.png" alt=""></a>
+                  <div class="social">
+                      <a class="social__link" href="#"><img class="social__img" src="./images/vk-icon.png" alt=""></a>
+                      <a class="social__link" href="#"><img class="social__img" src="./images/odnoclass-icon.png" alt=""></a>            
+                      <a class="social__link" href="#"><img class="social__img" src="./images/inst-icon.png" alt=""></a>
+                      <a class="social__link" href="#"><img class="social__img" src="./images/youtube-icon.png" alt=""></a>
+                      <a class="social__link" href="#"><img class="social__img" src="./images/yandex-icon.png" alt=""></a>
                   </div>
             </div>
           </nav> 
@@ -120,7 +121,7 @@
               <p class="tips__title">Дачные советы</p>
               <p class="tips__subtitle">Лайфхаки и личный опыт <br> садоводства от наших <br> читателей</p>
             </div>
-            <a class="tips__link" href="#"><img class="tips__play" src="./images/play-icon.png" alt=""></a>
+            <a class="tips__link" data-fancybox href="https://www.youtube.com/watch?v=vGyB093QOIo"><img class="tips__play" src="./images/play-icon.png" alt=""></a>
           </div>
           <img class="woman-img" src="./images/woman.png" alt="">
           <div class="info header__info">
@@ -130,12 +131,12 @@
               <input class="search__input" type="text" placeholder="Введите запрос для поиска">
               <img  class="search__img" src="./images/search-icon.png" alt="">
             </form>
-            <div class="widgets">
-              <a class="widgets__link" href="#"><img class="widgets__img" src="./images/vk-icon.png" alt=""></a>
-              <a class="widgets__link" href="#"><img class="widgets__img" src="./images/odnoclass-icon.png" alt=""></a>            
-              <a class="widgets__link" href="#"><img class="widgets__img" src="./images/inst-icon.png" alt=""></a>
-              <a class="widgets__link" href="#"><img class="widgets__img" src="./images/youtube-icon.png" alt=""></a>
-              <a class="widgets__link" href="#"><img class="widgets__img" src="./images/yandex-icon.png" alt=""></a>
+            <div class="social">
+              <a class="social__link" href="#"><img class="social__img" src="./images/vk-icon.png" alt=""></a>
+              <a class="social__link" href="#"><img class="social__img" src="./images/odnoclass-icon.png" alt=""></a>            
+              <a class="social__link" href="#"><img class="social__img" src="./images/inst-icon.png" alt=""></a>
+              <a class="social__link" href="#"><img class="social__img" src="./images/youtube-icon.png" alt=""></a>
+              <a class="social__link" href="#"><img class="social__img" src="./images/yandex-icon.png" alt=""></a>
             </div>
           </div>
         </div>
@@ -508,9 +509,9 @@
                                   </div>                                 
                                 </div>
                             </section>
-                            <div class="advertising-widget">
+                            <a class="advertising-widget">
                                 Рекламный <br> виджет
-                            </div>
+                            </a>
                         </div>
                       </div>
                       <div class="catalog-pages">
@@ -538,12 +539,12 @@
             <div class="logo__text">
               <p class="logo__title">Огородовед</p>
               <p class="logo__subtitle">© 2020 – Интернет-портал о красивых и урожайных грядках</p>
-              <div class="widgets">
-                <a class="widgets__link" href="#"><img class="widgets__img" src="./images/vk-icon.png" alt=""></a>
-                <a class="widgets__link" href="#"><img class="widgets__img" src="./images/odnoclass-icon.png" alt=""></a>            
-                <a class="widgets__link" href="#"><img class="widgets__img" src="./images/inst-icon.png" alt=""></a>
-                <a class="widgets__link" href="#"><img class="widgets__img" src="./images/youtube-icon.png" alt=""></a>
-                <a class="widgets__link" href="#"><img class="widgets__img" src="./images/yandex-icon.png" alt=""></a>
+              <div class="social">
+                <a class="social__link" href="#"><img class="social__img" src="./images/odnoclass-icon.png" alt=""></a>            
+                <a class="social__link" href="#"><img class="social__img" src="./images/vk-icon.png" alt=""></a>
+                <a class="social__link" href="#"><img class="social__img" src="./images/inst-icon.png" alt=""></a>
+                <a class="social__link" href="#"><img class="social__img" src="./images/youtube-icon.png" alt=""></a>
+                <a class="social__link" href="#"><img class="social__img" src="./images/yandex-icon.png" alt=""></a>
               </div>
             </div>
           </div>  
@@ -561,7 +562,7 @@
               <p class="tips__title">Дачные советы</p>
               <p class="tips__subtitle">Лайфхаки и личный опыт <br> садоводства от наших <br> читателей</p>
             </div>
-            <a class="tips__link" href="#"><img class="tips__play" src="./images/play-icon.png" alt=""></a>
+            <a class="tips__link"  data-fancybox href="https://www.youtube.com/watch?v=vGyB093QOIo"><img class="tips__play" src="./images/play-icon.png" alt=""></a>
           </div> 
         </div>
       </footer>
@@ -581,5 +582,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
     <script src="./catalog/view/theme/default/js/script.js"></script>
+    <script src="./catalog/view/theme/default/js/jquery.fancybox.min.js"></script>
 </body>
 </html>

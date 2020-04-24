@@ -23,7 +23,7 @@ $lightgreen: #9bc34e;
     .search{
         margin-top: 29px;
     }
-    .widgets{
+    .social{
         padding-top: 25px;
     }
     &__info{
@@ -77,7 +77,7 @@ $lightgreen: #9bc34e;
         right: 20px;        
     }
 }
-.widgets{
+.social{
     &__link{
         display: inline-block;
         transition: .3s;
@@ -592,7 +592,7 @@ $lightgreen: #9bc34e;
         border-bottom: 1px solid #e0e5ed;
         padding-bottom: 33px;
     }
-    .widgets{
+    .social{
         display: flex;
         padding-top: 17px;
     }    
@@ -703,7 +703,7 @@ $lightgreen: #9bc34e;
     .search{
         margin-left: auto;
     }
-    .widgets{
+    .social{
         display: flex;
         justify-content: flex-end;
         margin-left: auto;
@@ -1241,7 +1241,7 @@ $lightgreen: #9bc34e;
     }
 
 }
-.social{
+.widgets{
     display: flex;
     margin-left: auto;
     &__row{
@@ -1499,7 +1499,7 @@ $lightgreen: #9bc34e;
         .search{
             margin-top: 10px;
         }
-        .widgets{
+        .social{
             padding-top: 10px;
         }
 
@@ -1603,7 +1603,8 @@ $lightgreen: #9bc34e;
 @media screen and (max-width:850px){
     .popular-tips{
         &__container-side{
-            width: 50%;
+            width: 40%;
+            margin: 0 auto 40px;
         }
     }
     .important{
@@ -1649,7 +1650,7 @@ $lightgreen: #9bc34e;
     }
     .assessment{
         display: block;
-        .social{
+        .widgets{
             width: 100%;
             padding-top: 20px;
         }
@@ -1752,6 +1753,12 @@ $lightgreen: #9bc34e;
         &__container-side{
             width: 100%;
         }
+        .side-tip{
+            &__img{
+                margin: 0 auto;
+            }
+        }
+       
     }
     .title{
         font-size: 28px;
@@ -1986,7 +1993,7 @@ $lightgreen: #9bc34e;
         }
     }
     .menu-adaptive{
-        .widgets{
+        .social{
             &__link{
                 margin-right: 10px;
             }
@@ -2011,7 +2018,7 @@ $lightgreen: #9bc34e;
         }
     }
     .assessment{
-        .social{
+        .widgets{
             &__row{
                 flex-wrap: wrap;
             }

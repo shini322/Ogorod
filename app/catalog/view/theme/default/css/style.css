@@ -201,7 +201,7 @@
   margin-top: 29px;
 }
 
-.header .widgets {
+.header .social {
   padding-top: 25px;
 }
 
@@ -263,21 +263,21 @@
   right: 20px;
 }
 
-.widgets__link {
+.social__link {
   display: inline-block;
   -webkit-transition: .3s;
   transition: .3s;
   margin-right: 19px;
 }
 
-.widgets__img {
+.social__img {
   border: 1px solid transparent;
   border-radius: 50%;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.widgets__img:hover {
+.social__img:hover {
   border-color: #303543;
 }
 
@@ -916,7 +916,7 @@
   padding-bottom: 33px;
 }
 
-.footer .widgets {
+.footer .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1054,7 +1054,7 @@
   margin-left: auto;
 }
 
-.menu-adaptive .widgets {
+.menu-adaptive .social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1773,21 +1773,21 @@
   background-image: url(../img/star-assessment-yellow.png);
 }
 
-.social {
+.widgets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
 }
 
-.social__row {
+.widgets__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-right: -9px;
 }
 
-.social__container {
+.widgets__container {
   padding-right: 9px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1795,7 +1795,7 @@
   margin-bottom: 10px;
 }
 
-.social__item {
+.widgets__item {
   display: block;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1803,7 +1803,7 @@
   height: 36px;
 }
 
-.social__item + .social__item {
+.widgets__item + .widgets__item {
   margin-left: 9px;
 }
 
@@ -2060,7 +2060,7 @@
   .header .search {
     margin-top: 10px;
   }
-  .header .widgets {
+  .header .social {
     padding-top: 10px;
   }
   .menu {
@@ -2145,7 +2145,8 @@
 
 @media screen and (max-width: 850px) {
   .popular-tips__container-side {
-    width: 50%;
+    width: 40%;
+    margin: 0 auto 40px;
   }
   .important {
     -ms-flex-wrap: wrap;
@@ -2202,7 +2203,7 @@
   .assessment {
     display: block;
   }
-  .assessment .social {
+  .assessment .widgets {
     width: 100%;
     padding-top: 20px;
   }
@@ -2290,6 +2291,9 @@
 @media screen and (max-width: 550px) {
   .popular-tips__container-side {
     width: 100%;
+  }
+  .popular-tips .side-tip__img {
+    margin: 0 auto;
   }
   .title {
     font-size: 28px;
@@ -2491,7 +2495,7 @@
   .discussion__item.js-answer {
     padding-left: 15px;
   }
-  .menu-adaptive .widgets__link {
+  .menu-adaptive .social__link {
     margin-right: 10px;
   }
 }
@@ -2510,11 +2514,11 @@
   .copy .search__img {
     right: 40px;
   }
-  .assessment .social__row {
+  .assessment .widgets__row {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .assessment .social__container {
+  .assessment .widgets__container {
     width: 33.3333%;
   }
 }

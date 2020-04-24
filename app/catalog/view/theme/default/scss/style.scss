@@ -415,7 +415,7 @@ $lightgreen: #9bc34e;
     display: flex;
     flex-direction: column;
     &__img-block{
-        height: 175px;
+        
         border-radius: 20px;
         overflow: hidden;
     }
@@ -664,7 +664,8 @@ $lightgreen: #9bc34e;
 }
 .menu-adaptive{
     width: 50%;  
-    height: 100vh;   
+    height: 90%; 
+    overflow: auto;  
     margin-left: auto;
     display: none;
     position: fixed;
@@ -694,6 +695,7 @@ $lightgreen: #9bc34e;
         margin-left: auto;
         position: relative;
         transition: .3s;
+        width: 80%;
         &:hover{
             .menu-adaptive__link{
                 background-color: #5fab41;
@@ -736,13 +738,13 @@ $lightgreen: #9bc34e;
 
 
 
-.nav-toggle {display: none; position: absolute;background: transparent;border: 1px solid transparent;z-index: 4;right: 15px;top: 15px;}
+.nav-toggle {display: none; position: absolute;background: transparent;border: 1px solid transparent;z-index: 4;left: 15px;top: 15px;}
 .nav-toggle:focus {outline-width: 0;}
 .nav-toggle [class*='bar-'] { background: $lightgreen; display: block;-webkit-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .2s ease all;transition: .2s ease all;height: 5px;width: 30px;margin-bottom: 4px;}
 .nav-toggle .bar-bot {margin-bottom: 0;}
-.opened .bar-top {background-color: #fff; -webkit-transform: rotate(45deg);transform: rotate(45deg);-webkit-transform-origin: 0% 50%;transform-origin: 0% 50%;}
+.opened .bar-top {background-color: #000; -webkit-transform: rotate(45deg);transform: rotate(45deg);-webkit-transform-origin: 0% 50%;transform-origin: 0% 50%;}
 .opened .bar-mid {opacity: 0;}
-.opened .bar-bot {background-color: #fff; -webkit-transform: rotate(45deg);transform: rotate(-45deg);-webkit-transform-origin: 15% 95%;transform-origin: 15% 95%;}
+.opened .bar-bot {background-color: #000; -webkit-transform: rotate(45deg);transform: rotate(-45deg);-webkit-transform-origin: 15% 95%;transform-origin: 15% 95%;}
 
 
 
@@ -1407,7 +1409,10 @@ $lightgreen: #9bc34e;
 }
 .js-overflow{
     overflow: hidden;
+    position: relative;
 }
+
+
 
 @media screen and (max-width:1350px){
     section{
@@ -1514,6 +1519,7 @@ $lightgreen: #9bc34e;
 }
 @media screen and (max-width:1020px){
     .header{
+        padding-top: 25px;
         .inner{
             flex-wrap: wrap;
         }
@@ -1963,8 +1969,8 @@ $lightgreen: #9bc34e;
     }
     .side-tip{
         &__img-block{
-            height: 170px;
-            width: 320px;
+            
+            max-width: 320px;
             margin: 0 auto;
         }
     }

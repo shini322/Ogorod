@@ -100,22 +100,24 @@
                 </div>
           </div>
         </nav> 
-        <button class="nav-toggle">
+        <button class="nav-toggle header__toggle">
           <span class="bar-top"></span>
           <span class="bar-mid"></span>
           <span class="bar-bot"></span>
         </button>
       <div class="inner">
           
-        <div class="logo">
-          <a class="logo__link" href="#"><img class="logo__img" src="./images/logo.png" alt="" ></a>
+        <div class="logo header__logo">
+          <a class="logo__link" href="#">
+            <img class="logo__img" src="./images/logo.png" alt="" >
+            <span class="logo__title">Огородовед</span>
+          </a>
           <div class="logo__text">
-            <p class="logo__title">Огородовед</p>
-            <p class="logo__subtitle">Интернет-портал о красивых и урожайных грядках</p>
+            <span class="logo__subtitle">Интернет-портал о красивых и урожайных грядках</span>
           </div>
           <img class="logo__star" src="./images/star-icon.png" alt="">
         </div>
-        <div class="tips">
+        <div class="tips header__tips">
           <img class="tips__img" src="./images/farmer.png" alt="">
           <div class="tips__text">
             <p class="tips__title">Дачные советы</p>
@@ -219,13 +221,15 @@
           <h2 class="title">Популярные дачные советы</h2>
           <div class="popular-tips__block">
             <div class="popular-tips__container">
-              <div class="main-tip" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img1.jpg);">
-                <div class="tip-info">
+              <div class="main-tip popular-tips__item" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img1.jpg);">
+                <div class="tip-info popular-tips__info">
                   <a class="tip-info__category" href="#">Удобрения</a>
                   <span class="tip-info__date">10 апреля 2020</span>
                   <a class="tip-info__title">Теплица для огурцов своими руками – пошагово</a>
                   <div class="tip-info__profile">
-                    <img src="./images/popular-tips/profile-img.jpg" alt="" class="tip-info__profile-img">
+                    <div class="tip-info__avatar-container">
+                      <img src="./images/popular-tips/profile-img.jpg" alt="" class="tip-info__profile-img">
+                    </div>
                     <div class="tip-info__profile-info">
                       <p class="tip-info__profile-name">Евгения Шилова</p>
                       <p class="tip-info__profile-desc">г. Екатеринбург</p>
@@ -240,8 +244,8 @@
               </div>
             </div>
             <div class="popular-tips__container">
-              <div class="main-tip" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img2.jpg);">
-                <div class="tip-info tip-info-right">
+              <div class="main-tip  popular-tips__item" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img2.jpg);">
+                <div class="tip-info tip-info-right popular-tips__info">
                   <a class="tip-info__category" href="#">Рассада</a>
                   <span class="tip-info__date">10 апреля 2020</span>
                   <a class="tip-info__title">Как продать излишки урожая и рассады</a>
@@ -259,8 +263,10 @@
           </div>
           <div class="popular-tips__block">
             <div class="popular-tips__container-side">
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
+              <div class="side-tip popular-tips__item">
+                <div class="side-tip__img-block">
+                  <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
+                </div>
                 <div class="tip-info">
                   <a class="tip-info__category" href="#">Помидоры</a>
                   <span class="tip-info__date">10 апреля 2020</span>
@@ -274,8 +280,10 @@
               </div>
             </div> 
             <div class="popular-tips__container-side">
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
+              <div class="side-tip popular-tips__item">
+                <div class="side-tip__img-block">
+                  <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
+                </div>
                 <div class="tip-info">
                   <a class="tip-info__category" href="#">Лунный календарь</a>
                   <span class="tip-info__date">10 апреля 2020</span>
@@ -289,8 +297,10 @@
               </div>
             </div>
             <div class="popular-tips__container-side">
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
+              <div class="side-tip popular-tips__item">
+                <div class="side-tip__img-block">
+                  <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
+                </div>
                 <div class="tip-info">
                   <a class="tip-info__category" href="#">Капуста</a>
                   <span class="tip-info__date">10 апреля 2020</span>
@@ -304,8 +314,10 @@
               </div>
             </div>
             <div class="popular-tips__container-side">
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/popular-tips/side-img4.jpg" alt="">
+              <div class="side-tip popular-tips__item">
+                <div class="side-tip__img-block">
+                  <img class="side-tip__img" src="./images/popular-tips/side-img4.jpg" alt="">
+                </div>
                 <div class="tip-info">
                   <a class="tip-info__category" href="#">Лунный календарь</a>
                   <span class="tip-info__date">10 апреля 2020</span>
@@ -326,12 +338,14 @@
           <img src="./images/readers-tips/branch.png" alt="" class="branch-img">
           <h2 class="title">Советы наших читателей</h2>
           <div class="readers-tips__block">
-            <div class="tip-info">
+            <div class="tip-info readers-tips__container">
               <a class="tip-info__category" href="#">Удобрения</a>
               <span class="tip-info__date">10 апреля 2020</span>
               <a class="tip-info__title">Кaк ухаживать за рассадой помидоров в теплице после высадки</a>
               <div class="tip-info__profile">
-                <img src="./images/readers-tips/profile-img1.png" alt="" class="tip-info__profile-img">
+                <div class="tip-info__avatar-container">
+                  <img src="./images/readers-tips/profile-img1.png" alt="" class="tip-info__profile-img">
+                </div>
                 <div class="tip-info__profile-info">
                   <p class="tip-info__profile-name">Евгения Шилова</p>
                   <p class="tip-info__profile-desc">г. Екатеринбург</p>
@@ -343,12 +357,14 @@
                 <span class="tip-info__likes-total">385</span>
               </div>
             </div>
-            <div class="tip-info">
+            <div class="tip-info readers-tips__container">
               <a class="tip-info__category" href="#">Бахчевые</a>
               <span class="tip-info__date">10 апреля 2020</span>
               <a class="tip-info__title">Выращивание арбузов в открытом грунте: инструкция</a>
               <div class="tip-info__profile">
-                <img src="./images/readers-tips/profile-img2.png" alt="" class="tip-info__profile-img">
+                <div class="tip-info__avatar-container">
+                  <img src="./images/readers-tips/profile-img2.png" alt="" class="tip-info__profile-img">
+                </div>
                 <div class="tip-info__profile-info">
                   <p class="tip-info__profile-name">Евгения Шилова</p>
                   <p class="tip-info__profile-desc">Начинающий огородник</p>
@@ -360,12 +376,14 @@
                 <span class="tip-info__likes-total">385</span>
               </div>
             </div>
-            <div class="tip-info">
+            <div class="tip-info readers-tips__container">
               <a class="tip-info__category" href="#">Редис</a>
               <span class="tip-info__date">10 апреля 2020</span>
               <a class="tip-info__title">Определитель болезней томатов: фото, описание, меры борьбы и профилактика</a>
               <div class="tip-info__profile">
-                <img src="./images/readers-tips/profile-img3.png" alt="" class="tip-info__profile-img">
+                <div class="tip-info__avatar-container">
+                  <img src="./images/readers-tips/profile-img3.png" alt="" class="tip-info__profile-img">
+                </div>
                 <div class="tip-info__profile-info">
                   <p class="tip-info__profile-name">Евгения Шилова</p>
                   <p class="tip-info__profile-desc">Эксперт портала</p>
@@ -437,13 +455,15 @@
           <h2 class="title">Обновления на сайте</h2>
           <div class="updates__container">
             <div class="updates__block">
-              <div class="main-tip" style="background-image: url(./images/updates/main1.jpg);">
-                <div class="tip-info">
+              <div class="main-tip updates__item" style="background-image: url(./images/updates/main1.jpg);">
+                <div class="tip-info updates__info">
                   <a class="tip-info__category" href="#">Удобрения</a>
                   <span class="tip-info__date">10 апреля 2020</span>
                   <a class="tip-info__title">Теплица для огурцов своими руками – пошагово</a>
                   <div class="tip-info__profile">
-                    <img src="./images/popular-tips/profile-img.jpg" alt="" class="tip-info__profile-img">
+                    <div class="tip-info__avatar-container">
+                      <img src="./images/popular-tips/profile-img.jpg" alt="" class="tip-info__profile-img">
+                    </div>
                     <div class="tip-info__profile-info">
                       <p class="tip-info__profile-name">Евгения Шилова</p>
                       <p class="tip-info__profile-desc">г. Екатеринбург</p>
@@ -458,25 +478,31 @@
               </div>            
             </div>
             <div class="updates__block">
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/updates/side1.jpg" alt="">
-                <div class="tip-info">
+              <div class="side-tip updates__item">
+                <a class="side-tip__img-block updates__img-block" >
+                  <img class="side-tip__img" src="./images/updates/side1.jpg" alt="">
+                </a>
+                <div class="tip-info updates__info">
                   <a class="tip-info__category" href="#">Лунный календарь</a>
                   <span class="tip-info__date">10 апреля 2020</span>
                   <a class="tip-info__title">Божья коровка – польза и вред для растений и человека</a> 
                 </div>
               </div>
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/updates/side2.jpg" alt="">
-                <div class="tip-info">
+              <div class="side-tip updates__item">
+                <a class="side-tip__img-block updates__img-block" >
+                  <img class="side-tip__img" src="./images/updates/side2.jpg" alt="">
+                </a>
+                <div class="tip-info updates__info">
                   <a class="tip-info__category" href="#">Теплицы и парники</a>
                   <span class="tip-info__date">10 апреля 2020</span>
                   <a class="tip-info__title">Как вырастить мушмулу германскую, и чем она полезна</a> 
                 </div>
               </div>
-              <div class="side-tip">
-                <img class="side-tip__img" src="./images/updates/side3.jpg" alt="">
-                <div class="tip-info">
+              <div class="side-tip updates__item">
+                <a class="side-tip__img-block updates__img-block" >
+                  <img class="side-tip__img" src="./images/updates/side3.jpg" alt="">
+                </a>
+                <div class="tip-info updates__info">
                   <a class="tip-info__category" href="#">Перец</a>
                   <span class="tip-info__date">10 апреля 2020</span>
                   <a class="tip-info__title">Удачное соседство: что можно сажать рядом с огурцами</a> 
@@ -497,19 +523,15 @@
   </div>  
   <footer class="footer">
     <div class="inner">
-      <div class="logo">
-        <a class="logo__link" href="#"><img class="logo__img" src="./images/logo.png" alt="" ></a>
+      <div class="logo footer__logo">
+        <a class="logo__link" href="#">
+          <img class="logo__img" src="./images/logo.png" alt="" >
+          <span class="logo__title">Огородовед</span>
+        </a>
         <div class="logo__text">
-          <p class="logo__title">Огородовед</p>
-          <p class="logo__subtitle">© 2020 – Интернет-портал о красивых и урожайных грядках</p>
-          <div class="social">
-            <a class="social__link" href="#"><img class="social__img" src="./images/vk-icon.png" alt=""></a>
-            <a class="social__link" href="#"><img class="social__img" src="./images/odnoclass-icon.png" alt=""></a>            
-            <a class="social__link" href="#"><img class="social__img" src="./images/inst-icon.png" alt=""></a>
-            <a class="social__link" href="#"><img class="social__img" src="./images/youtube-icon.png" alt=""></a>
-            <a class="social__link" href="#"><img class="social__img" src="./images/yandex-icon.png" alt=""></a>
-          </div>
+          <span class="logo__subtitle">Интернет-портал о красивых и урожайных грядках</span>
         </div>
+        <img class="logo__star" src="./images/star-icon.png" alt="">
       </div>  
       <div class="footer__agreement">
         <a class="footer__link" href="#">Политика конфиденциальности</a>
@@ -519,13 +541,13 @@
       <div class="footer__text">
         Перепечатка материалов <br> разрешена только с указанием <br> первоисточника
       </div>
-      <div class="tips">
+      <div class="tips footer__tips">
         <img class="tips__img" src="./images/farmer.png" alt="">
         <div class="tips__text">
           <p class="tips__title">Дачные советы</p>
           <p class="tips__subtitle">Лайфхаки и личный опыт <br> садоводства от наших <br> читателей</p>
         </div>
-        <a class="tips__link"  data-fancybox href="https://www.youtube.com/watch?v=vGyB093QOIo"><img class="tips__play" src="./images/play-icon.png" alt=""></a>
+        <a class="tips__link"  data-fancybox href="https://www.youtube.com/watch?v=vGyB093QOIo" href="#"><img class="tips__play" src="./images/play-icon.png" alt=""></a>
       </div> 
     </div>
   </footer>
@@ -535,7 +557,7 @@
       <div class="copy__text">Нашли ошибку, неточность или опечатку в тексте? <br>
         Выделите её и нажмите <span class="copy__text--blue">Ctrl + Enter</span>
       </div>
-      <div class="search">
+      <div class="search copy__search">
         <input class="search__input" type="text" placeholder="Введите запрос для поиска">
         <img  class="search__img" src="./images/search-icon.png" alt="">
       </div>

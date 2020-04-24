@@ -284,11 +284,17 @@
 .logo {
   max-width: 288px;
   position: relative;
+  margin-top: 45px;
+  margin-right: 75px;
+}
+
+.logo__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 45px;
-  margin-right: 75px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo__img {
@@ -311,6 +317,7 @@
   line-height: 20px;
   color: #303543;
   padding-top: 7px;
+  margin-left: 70px;
 }
 
 .logo__star {
@@ -598,7 +605,6 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-right: 19px;
 }
 
 .tip-info__profile-name {
@@ -659,6 +665,12 @@
   padding-right: 9px;
 }
 
+.tip-info__avatar-container {
+  height: 50px;
+  width: 50px;
+  margin-right: 19px;
+}
+
 .side-tip {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -669,10 +681,23 @@
           flex-direction: column;
 }
 
-.side-tip__img {
+.side-tip__img-block {
+  height: 175px;
   border-radius: 20px;
-  max-height: 175px;
-  max-width: 295px;
+  overflow: hidden;
+}
+
+.side-tip__img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.side-tip__img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .side-tip .tip-info {
@@ -741,7 +766,8 @@
 
 .readers-tips .branch-img {
   position: absolute;
-  left: 460px;
+  left: 50%;
+  margin-left: -194px;
   top: -11%;
 }
 
@@ -805,7 +831,7 @@
 }
 
 .important__img {
-  padding-right: 27px;
+  margin-right: 27px;
 }
 
 .important__title {
@@ -855,6 +881,19 @@
           justify-content: space-between;
 }
 
+.updates__img-block {
+  margin-right: 30px;
+  width: 200px;
+  height: 110px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: block;
+}
+
+.updates__img {
+  width: 100%;
+}
+
 .updates .side-tip {
   width: auto;
   -webkit-box-orient: horizontal;
@@ -865,12 +904,6 @@
       -ms-flex-align: start;
           align-items: flex-start;
   margin-bottom: 0;
-}
-
-.updates .side-tip__img {
-  max-width: 200px;
-  max-height: 110px;
-  padding-right: 30px;
 }
 
 .updates .side-tip .tip-info {
@@ -1140,6 +1173,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.catalog__img-block {
+  height: auto;
 }
 
 .rightside {
@@ -2317,6 +2354,9 @@
     max-height: none;
     margin: 0 auto 15px;
   }
+  .updates__img-block {
+    margin: 0 auto 20px;
+  }
   .catalog__container {
     width: 100%;
     padding-right: 0;
@@ -2438,6 +2478,11 @@
   }
   .menu-adaptive__link {
     font-size: 14px;
+  }
+  .side-tip__img-block {
+    height: 170px;
+    width: 320px;
+    margin: 0 auto;
   }
 }
 

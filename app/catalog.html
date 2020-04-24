@@ -108,10 +108,12 @@
         <div class="inner">
             
           <div class="logo">
-            <a class="logo__link" href="#"><img class="logo__img" src="./images/logo.png" alt="" ></a>
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="./images/logo.png" alt="" >
+              <span class="logo__title">Огородовед</span>
+            </a>
             <div class="logo__text">
-              <p class="logo__title">Огородовед</p>
-              <p class="logo__subtitle">Интернет-портал о красивых и урожайных грядках</p>
+              <span class="logo__subtitle">Интернет-портал о красивых и урожайных грядках</span>
             </div>
             <img class="logo__star" src="./images/star-icon.png" alt="">
           </div>
@@ -220,8 +222,8 @@
                   <h2 class="title">Популярные в разделе</h2>
                   <div class="popular-tips__block">
                     <div class="popular-tips__container">
-                      <div class="main-tip" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img1.jpg);">
-                        <div class="tip-info">
+                      <div class="main-tip popular-tips__item" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img1.jpg);">
+                        <div class="tip-info popular-tips__info">
                           <a class="tip-info__category" href="#">Удобрения</a>
                           <span class="tip-info__date">10 апреля 2020</span>
                           <a class="tip-info__title">Теплица для огурцов своими руками – пошагово</a>
@@ -241,8 +243,8 @@
                       </div>
                     </div>
                     <div class="popular-tips__container">
-                      <div class="main-tip" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img2.jpg);">
-                        <div class="tip-info tip-info-right">
+                      <div class="main-tip popular-tips__item" style="background-image: url(./catalog/view/theme/default/img/popular-tips/main-img2.jpg);">
+                        <div class="tip-info tip-info-right popular-tips__info">
                           <a class="tip-info__category" href="#">Рассада</a>
                           <span class="tip-info__date">10 апреля 2020</span>
                           <a class="tip-info__title">Как продать излишки урожая и рассады</a>
@@ -266,9 +268,11 @@
                       <div class="catalog__block">
                         <div class="catalog__row">
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Секретный способ посадки и полива помидоров</a>              
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -281,9 +285,11 @@
                                 
                             </div>
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
-                                  <div class="tip-info">
+                                </a>
+                                  <div class="tip-info catalog__info">
                                     
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Как использовать ветки растений после обрезки</a>              
@@ -296,9 +302,61 @@
                                 </div>
                             </div>
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
+                                    <span class="tip-info__date">10 апреля 2020</span>
+                                    <a class="tip-info__title">Огурцы на балконе – забытая технология выращивания</a>               
+                                    <a class="tip-info__read-more" href="#">Читать далее</a>
+                                    <div class="tip-info__likes">
+                                      <img class="tip-info__likes-img" src="./images/like-icon.png" alt="">                      
+                                      <span class="tip-info__likes-total">100</span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="catalog__container">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
+                                  <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
+                                    <span class="tip-info__date">10 апреля 2020</span>
+                                    <a class="tip-info__title">Секретный способ посадки и полива помидоров</a>              
+                                    <a class="tip-info__read-more" href="#">Читать далее</a>
+                                    <div class="tip-info__likes">
+                                      <img class="tip-info__likes-img" src="./images/like-icon.png" alt="">                      
+                                      <span class="tip-info__likes-total">78</span>
+                                    </div>
+                                  </div>
+                                </div>
+                                
+                            </div>
+                            <div class="catalog__container">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
+                                  <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
+                                </a>
+                                  <div class="tip-info catalog__info">
+                                    
+                                    <span class="tip-info__date">10 апреля 2020</span>
+                                    <a class="tip-info__title">Как использовать ветки растений после обрезки</a>              
+                                    <a class="tip-info__read-more" href="#">Читать далее</a>
+                                    <div class="tip-info__likes">
+                                      <img class="tip-info__likes-img" src="./images/like-icon.png" alt="">                      
+                                      <span class="tip-info__likes-total">256</span>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <div class="catalog__container">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
+                                  <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Огурцы на балконе – забытая технология выращивания</a>               
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -310,9 +368,11 @@
                                 </div>
                             </div> 
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Секретный способ посадки и полива помидоров</a>              
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -325,9 +385,12 @@
                                 
                             </div>
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
-                                  <div class="tip-info">                                 
+                                </a>
+                                  <div class="tip-info catalog__info">
+                                    
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Как использовать ветки растений после обрезки</a>              
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -339,9 +402,11 @@
                                 </div>
                             </div>
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Огурцы на балконе – забытая технология выращивания</a>               
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -351,12 +416,13 @@
                                     </div>
                                   </div>
                                 </div>
-                                
-                            </div>  
+                            </div> 
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Секретный способ посадки и полива помидоров</a>              
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -369,9 +435,12 @@
                                 
                             </div>
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">
+                                    
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Как использовать ветки растений после обрезки</a>              
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -383,9 +452,11 @@
                                 </div>
                             </div>
                             <div class="catalog__container">
-                              <div class="side-tip">
+                              <div class="side-tip catalog__item">
+                                <a class="side-tip__img-block catalog__img-block">
                                   <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
-                                  <div class="tip-info">                                  
+                                </a>
+                                  <div class="tip-info catalog__info">                                  
                                     <span class="tip-info__date">10 апреля 2020</span>
                                     <a class="tip-info__title">Огурцы на балконе – забытая технология выращивания</a>               
                                     <a class="tip-info__read-more" href="#">Читать далее</a>
@@ -395,52 +466,8 @@
                                     </div>
                                   </div>
                                 </div>
-                                
-                            </div>  
-                            <div class="catalog__container">
-                              <div class="side-tip">
-                                  <img class="side-tip__img" src="./images/popular-tips/side-img1.jpg" alt="">
-                                  <div class="tip-info">                                  
-                                    <span class="tip-info__date">10 апреля 2020</span>
-                                    <a class="tip-info__title">Секретный способ посадки и полива помидоров</a>              
-                                    <a class="tip-info__read-more" href="#">Читать далее</a>
-                                    <div class="tip-info__likes">
-                                      <img class="tip-info__likes-img" src="./images/like-icon.png" alt="">                      
-                                      <span class="tip-info__likes-total">78</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                            </div>
-                            <div class="catalog__container">
-                              <div class="side-tip">
-                                  <img class="side-tip__img" src="./images/popular-tips/side-img2.jpg" alt="">
-                                  <div class="tip-info">                                  
-                                    <span class="tip-info__date">10 апреля 2020</span>
-                                    <a class="tip-info__title">Как использовать ветки растений после обрезки</a>              
-                                    <a class="tip-info__read-more" href="#">Читать далее</a>
-                                    <div class="tip-info__likes">
-                                      <img class="tip-info__likes-img" src="./images/like-icon.png" alt="">                      
-                                      <span class="tip-info__likes-total">256</span>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <div class="catalog__container">
-                              <div class="side-tip">
-                                  <img class="side-tip__img" src="./images/popular-tips/side-img3.jpg" alt="">
-                                  <div class="tip-info">                                  
-                                    <span class="tip-info__date">10 апреля 2020</span>
-                                    <a class="tip-info__title">Огурцы на балконе – забытая технология выращивания</a>               
-                                    <a class="tip-info__read-more" href="#">Читать далее</a>
-                                    <div class="tip-info__likes">
-                                      <img class="tip-info__likes-img" src="./images/like-icon.png" alt="">                      
-                                      <span class="tip-info__likes-total">100</span>
-                                    </div>
-                                  </div>
-                                </div>
-                                
-                            </div>                          
+                            </div> 
+                                                     
                         </div>
                         <div class="rightside">
                             <div class="catalog-filters">
@@ -457,7 +484,7 @@
                                       <span class="catalog-filters__link" href="#">Если есть</span><span class="catalog-filters__total">72</span>  
                                   </a>
                             </div>
-                            <div class="important">
+                            <div class="important rightside__important">
                                 <img src="./images/important/img.png" alt="" class="important__img">
                                 <div class="important__title">Важно знать!</div>
                                 <div class="important__text">Конечно, в полевых условиях сделать это не так легко, ведь многие возбудители прекрасно маскируются. Но надеемся, что подробные описания и фотографии помогут вам сориентироваться.</div>
@@ -535,9 +562,11 @@
     <footer class="footer">
         <div class="inner">
           <div class="logo">
-            <a class="logo__link" href="#"><img class="logo__img" src="./images/logo.png" alt="" ></a>
+            <a class="logo__link" href="#">
+              <img class="logo__img" src="./images/logo.png" alt="" >
+              <span href="#" class="logo__title">Огородовед</span>
+            </a>
             <div class="logo__text">
-              <p class="logo__title">Огородовед</p>
               <p class="logo__subtitle">© 2020 – Интернет-портал о красивых и урожайных грядках</p>
               <div class="social">
                 <a class="social__link" href="#"><img class="social__img" src="./images/odnoclass-icon.png" alt=""></a>            
